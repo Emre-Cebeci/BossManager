@@ -6,43 +6,43 @@ If you want to read this in another language: [Spanish](https://github.com/Soof4
 
 ## How to Install
 - Download the Plugin file [here!](https://github.com/Soof4/BossManager/releases/latest/download/BossManager.dll)
-- Drop the `BossManager.dll` File into the `ServerPlugins` folder
+- Drop the `BossManager.dll` file into the `ServerPlugins` folder
 - Start your TShock server
 
 ## Features (Can be modified in the config file)
 - Prevent players from joining while a boss is active
-- Prevent specific bosses from spawning
+- Prevent specific bosses from summoning
 - Require specific amount of players online to spawn a boss
 - More boss related commands
 
-## Commands & Permissions 
+## Commands & Permissions
 Undo Boss Command
 - Command Aliases: ` /undoboss `, ` /uboss `
 - Command Syntax: ` /undoboss <boss name / alias> `
 - Description: Toggle a Bosses Defeated State
 - Permission: ` bossmgr.undoboss `
 
-List Boss Command: 
+List Boss Command:
 - Command Aliases: ` /listboss `, ` /lboss ` , ` /bosses `
 - Description: List All Defeated Bosses and Events
 - Permission: ` bossmgr.listboss `
 
-Enable Boss Command: 
-- Command Aliases: ` /enableboss `, ` /enblb ` 
+Enable Boss Command:
+- Command Aliases: ` /enableboss `, ` /enblb `
 - Description: Allow / Prevent a specific boss to spawn
 - Permission: ` bossmgr.enableboss `
 - Bosses can also  be changed manually via the config file!
 
-Boss Mgr Reload Command: 
-- Command Aliases: ` /bossrel `
+Reload Command:
+- Command Aliases: ` /reload `
 - Description: Reload the BossMgr Plugin
-- Permission: ` bossmgr.reload `
+- Permission: ` tshock.cfg.reload `
 
 ## How to Prevent/Allow a Boss
 #### Method 1
 - Open the Config file at `/tshock/BossManagerConfig.json`
 - Change the specified boss enabled state to `true` to `false`
-- Use  ` /bossrel ` in the chat to reload the your configurations 
+- Use  ` /reload ` in the chat to reload the your configurations
 #### Method 2
 - Use the ` /enableboss ` command followed by a boss alias
 
@@ -69,7 +69,7 @@ King Slime
 - ` king `
 - ` ks `
 
-Eye of Cthulhu: 
+Eye of Cthulhu:
 - ` eyeofcthulhu `
 - ` eye `
 - ` eoc `
@@ -84,6 +84,7 @@ Brain of Cthulhu / Eater of Worlds:
 - ` eater `
 
 Deerclops
+- ` dst `
 - ` deerclops `
 - ` deer `
 - ` dc `
@@ -127,6 +128,9 @@ Duke Fishron
 - ` duke `
 - ` fishron `
 
+Betsy
+- ` betsy `
+
 Lunatic Cultist
 - ` lunaticcultist `
 - ` cultist `
@@ -143,4 +147,4 @@ Moonlord
 
 ----
 
-Last Tested: 19/9/2023 (Terraria 1.4.4.9)
+Last Tested: 11/9/2024 (Terraria 1.4.4.9)
