@@ -6,7 +6,7 @@ namespace BossManager
     public partial class Plugin : TerrariaPlugin
     {
         public override string Name => "BossManager";
-        public override Version Version => new(1, 4, 1);
+        public override Version Version => new(1, 4, 2);
         public override string Author => "Ozz5581 & Soofa";
         public override string Description => "Controls boss spawning requirements.";
 

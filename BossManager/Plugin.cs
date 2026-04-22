@@ -45,7 +45,7 @@ namespace BossManager
             TSPlayer plr = args.Player;
             if (args.Control.IsUsingItem && IsSpawnerItem(plr.SelectedItem))
             {
-                if (!IsBossSpawnable(GetBossNetIDFromSpawner(plr.SelectedItem.netID)))
+                if (!IsBossSpawnable(GetBossNetIDFromSpawner(plr.SelectedItem.type)))
                 {
                     plr.SendErrorMessage("This boss is disabled!");
 
@@ -542,7 +542,7 @@ namespace BossManager
                 ItemID.CelestialSigil
             };
 
-            return spawnerIds.Contains(item.netID);
+            return spawnerIds.Contains(item.type);
         }
 
         private bool IsBossSpawnable(int netID)
